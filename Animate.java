@@ -15,7 +15,7 @@ public class Animate {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        MyDrawPanel drawPanel = new MyDrawPanel();
+        MyDrawPanelAnimate drawPanel = new MyDrawPanelAnimate();
 
         frame.getContentPane().add(drawPanel);
         frame.setSize(300,300);
@@ -70,7 +70,7 @@ public class Animate {
 
         
     }
-    class MyDrawPanel extends JPanel {
+    class MyDrawPanelAnimate extends JPanel {
         public void paintComponent(Graphics g) {
             g.setColor(Color.orange);
             g.fillOval(x,y,100,100);
